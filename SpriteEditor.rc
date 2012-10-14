@@ -1,0 +1,544 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SpriteEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon2.ico"
+IDR_UntitledSpriteTYPE  ICON                    "res\\doc_icon.ico"
+IDI_ICON1               ICON                    "icon1.ico"
+IDI_EXPORTICON          ICON                    "res\\todisk.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_ABOUTBITMAP         BITMAP                  "res\\about.bmp"
+IDB_LISTICONSBITMAP     BITMAP                  "res\\list_icons.bmp"
+IDB_BUTTONBITMAP        BITMAP                  "res\\button.bmp"
+IDB_OVERBUTTONBITMAP    BITMAP                  "res\\overbutton.bmp"
+IDB_SELECTEDBUTTONBITMAP BITMAP                  "res\\selectedbutton.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  25, 25
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit", GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Animate"
+    BEGIN
+        MENUITEM "&Play",                       ID_ANIMATE_PLAY
+        MENUITEM "&Stop",                       ID_ANIMATE_STOP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Make a donation...",          ID_HELP_MAKEADONATION
+        MENUITEM "Other great programs...",     ID_HELP_OTHERGREATPROGRAMS
+        MENUITEM SEPARATOR
+        MENUITEM "&About Sprite Editor...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,36,51,16,NOT WS_VISIBLE | WS_DISABLED | WS_GROUP
+END
+
+IDD_SPRITEPROPERTIESFORM DIALOGEX 0, 0, 144, 530
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Sprite Name",IDC_PROPERTIESSTATIC,4,1,137,29
+    EDITTEXT        IDC_NAMEEDIT,10,12,125,12,ES_AUTOHSCROLL
+    GROUPBOX        "Sprite's Frames",IDC_FRAMESTATIC,4,31,137,374
+    PUSHBUTTON      "Add Frame",IDC_ADDFRAMEBUTTON,11,43,59,14,BS_FLAT
+    PUSHBUTTON      "Remove Frame",IDC_REMOVEFRAMEBUTTON,73,43,59,14,BS_FLAT
+    CONTROL         "",IDC_FRAMELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,60,123,203,WS_EX_STATICEDGE
+    GROUPBOX        "Animation Options",IDC_ANIMATIONSTATIC,11,265,123,50
+    PUSHBUTTON      "Play",IDC_PLAYBUTTON,16,277,29,14,BS_FLAT
+    PUSHBUTTON      "STOP",IDC_STOPBUTTON,48,277,29,14,BS_FLAT
+    PUSHBUTTON      "<<",IDC_STEPLEFTBUTTON,80,277,21,14,BS_FLAT
+    PUSHBUTTON      ">>",IDC_STEPRIGHTBUTTON,104,277,21,14,BS_FLAT
+    LTEXT           "Playback Speed(ms):",IDC_STATIC,17,298,68,8
+    EDITTEXT        IDC_PLAYBACKEDIT,86,296,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PLAYBACKSPEEDSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK,120,296,11,12
+    GROUPBOX        "Key Frame Sequence Options",IDC_STATIC,11,318,123,82
+    LTEXT           "Seq. Name:",IDC_STATIC,18,331,38,8
+    EDITTEXT        IDC_SEQUENCENAMEEDIT,59,329,70,12,ES_AUTOHSCROLL
+    LTEXT           "Start Frame:",IDC_STATIC,18,348,42,8
+    EDITTEXT        IDC_STARTFRAMEEDIT,62,346,67,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRAMESTARTSPIN,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK,119,346,11,12
+    LTEXT           "End Frame:",IDC_STATIC,18,365,38,8
+    EDITTEXT        IDC_ENDFRAMEEDIT,62,363,67,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRAMEENDSPIN,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK,119,363,11,12
+    PUSHBUTTON      "Set",IDC_SETKEYFRAMEBUTTON,17,381,43,14
+    PUSHBUTTON      "Edit Key Frames",IDC_EDITKEYFRAMEBUTTON,63,381,66,14
+    GROUPBOX        "Export Options",IDC_EXPORTSTATIC,4,407,137,119,BS_BITMAP
+    ICON            IDI_EXPORTICON,IDC_STATIC,19,419,21,20,SS_CENTERIMAGE
+    CONTROL         "Create texture image",IDC_CREATETEXTUREIMAGECHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,419,85,10
+    CONTROL         "Create sprite file",IDC_CREATESPRITEFILECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,433,69,10
+    GROUPBOX        "Texture Dimensions",IDC_STATIC,10,444,126,46
+    LTEXT           "Width:",IDC_STATIC,15,458,22,8
+    EDITTEXT        IDC_TEXTUREWIDTHEDIT,43,456,86,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TEXTUREWIDTHSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,120,456,10,14
+    LTEXT           "Height:",IDC_STATIC,15,475,24,8
+    EDITTEXT        IDC_TEXTUREHEIGHTEDIT,43,474,86,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TEXTUREHEIGHTSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,120,474,10,14
+    GROUPBOX        "Resampling Options",IDC_STATIC,10,493,75,28
+    COMBOBOX        IDC_RESAMPLINGCOMBO,15,504,65,43,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Export...",IDC_EXPORTBUTTON,89,496,47,25,BS_FLAT
+END
+
+IDD_KEYFRAMEDIALOG DIALOGEX 0, 0, 388, 238
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Key Frames"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,227,219,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,331,219,50,14
+    CONTROL         "",IDC_KEYFRAMELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,5,375,208,WS_EX_CLIENTEDGE | WS_EX_RIGHT
+    PUSHBUTTON      "Remove",IDREMOVEKEYFRAME,281,219,45,14
+END
+
+IDD_SPLASHDIALOG DIALOGEX 0, 0, 188, 143
+STYLE DS_SYSMODAL | DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_WINDOWEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,0
+ PRODUCTVERSION 0,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "http://www.l33tprogrammer.com/"
+            VALUE "CompanyName", "Joseph A. Marrero"
+            VALUE "FileDescription", "A Sprite editor"
+            VALUE "FileVersion", "0.0.0.5"
+            VALUE "InternalName", "SpriteEditor.exe"
+            VALUE "LegalCopyright", "Copyright (c) Joseph A. Marrero.  All rights reserved."
+            VALUE "OriginalFilename", "2DSpriteEditor.exe"
+            VALUE "ProductName", "Sprite Editor"
+            VALUE "ProductVersion", "0.0.0.5"
+            VALUE "SpecialBuild", "beta"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+    END
+
+    IDD_SPRITEPROPERTIESFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 523
+    END
+
+    IDD_KEYFRAMEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_SPLASHDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SPRITEPROPERTIESFORM DLGINIT
+BEGIN
+    IDC_RESAMPLINGCOMBO, 0x403, 2, 0
+0x0020, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Sprite Editor\n\nSpriteFile\nSprite Files (*.spr)\n.spr\nSprite\nSprite"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Sprite Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PLAYBUTTON          "Play all the frames of the sprite."
+    IDC_STOPBUTTON          "Stop playing sprite."
+    IDC_STEPLEFTBUTTON      "Go to the first frame."
+    IDC_STEPRIGHTBUTTON     "Go to the last frame."
+    IDC_TEXTUREWIDTHEDIT    "The width that the texture will be exported with."
+    IDC_TEXTUREHEIGHTEDIT   "The height that the texture will be exported with."
+    IDC_ADDFRAMEBUTTON      "Add a frame to this sprite file."
+    IDC_REMOVEFRAMEBUTTON   "Remove a frame from this sprite file."
+    IDC_CREATETEXTUREIMAGECHECK "Choose this to create a texture image."
+    IDC_CREATESPRITEFILECHECK "Choose this to create a sprite object file."
+    IDC_EXPORTBUTTON        "Export the sprite."
+    IDC_PLAYBACKEDIT        "The animation playback speed."
+    IDC_FRAMELIST           "List of all frames in the sprite file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_NAMEEDIT            "Name of sprite."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SEQUENCENAMEEDIT    "The name of this key frame sequence."
+    IDC_STARTFRAMEEDIT      "Starting frame"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_ENDFRAMEEDIT        "Ending frame"
+    IDC_SETKEYFRAMEBUTTON   "Set the frames between the start and end frames as a key frame sequence."
+    IDC_EDITKEYFRAMEBUTTON  "View or edit any of the key frame sequences."
+    IDC_RESAMPLINGCOMBO     "Specify what resampling algorithm to use."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_OTHERGREATPROGRAMS 
+                            "Other great programs found at http://www.l33tprogrammer.com/"
+    ID_HELP_MAKEADONATION   "Make a donation and help a young helpness computer science student."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SpriteEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,4 @@
+//Maya 6.5 Project Definition
+
+workspace -fr "MacromediaShockwave3D" "w3d";
+workspace -fr "particles" "particles";
